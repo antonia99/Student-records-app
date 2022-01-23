@@ -1,0 +1,39 @@
+﻿<Window x:Class="Evidenta_Studenti.Adauga"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Evidenta_Studenti"
+        mc:Ignorable="d"
+        Title="Adauga" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label x:Name="lbnume" Content="Nume:&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="49,49,0,0" Height="43" Width="67" FontSize="20" RenderTransformOrigin="0.492,0.567"/>
+        <TextBox x:Name="tbnume" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" Text="&#xA;" VerticalAlignment="Top" Width="139" Margin="189,49,0,0" FontSize="17"/>
+        <Label x:Name="lbdatan" Content="Data nasterii:&#xA;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="49,100,0,0" Height="32" Width="135" FontSize="20" RenderTransformOrigin="0.492,0.567"/>
+        <DatePicker x:Name="alegedata" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="189,104,0,0" FontSize="17"/>
+        <Label x:Name="lbgen" Content="Genul:&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="49,151,0,0" Height="47" Width="87" FontSize="20" RenderTransformOrigin="0.492,0.567"/>
+        <RadioButton x:Name="rbm" Content="Masculin" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="189,161,0,0"  FontSize="17" Tag="Masculin"/>
+        <RadioButton x:Name="rbf" Content="Feminin" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="296,161,0,0" FontSize="17" Tag="Feminin"/>
+        <Label x:Name="lban" Content="An:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="49,203,0,0" Height="47" Width="67" FontSize="20" RenderTransformOrigin="0.492,0.567"/>
+        <ComboBox x:Name="comboan" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="189,207,0,0" FontSize="17">
+        <ComboBoxItem Content="1" Tag="1"/>
+        <ComboBoxItem Content="2" Tag="2"/>
+        <ComboBoxItem Content="3" Tag="3"/>
+        <ComboBoxItem Content="4" Tag="4"/>
+        <ComboBoxItem Content="5" Tag="5"/>
+        <ComboBoxItem Content="6" Tag="6"/>
+        </ComboBox>
+        <Label x:Name="lbnivel" Content="Nivel:&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="49,255,0,0" Height="38" Width="111" FontSize="20" RenderTransformOrigin="0.492,0.567"/>
+        <CheckBox x:Name="chblicenta" Content="Licenta" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="189,262,0,0" FontSize="17"/>
+        <CheckBox x:Name="chbmaster" Content="Master" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,262,0,0" FontSize="17"/>
+        <Label x:Name="lbspecializare" Content="Specializarea:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="49,314,0,0" Height="35" Width="135" FontSize="20" RenderTransformOrigin="0.492,0.567"/>
+        <TextBox x:Name="tbspecializare" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" Text="&#xA;" VerticalAlignment="Top" Width="168" Margin="189,314,0,0" FontSize="17"/>
+        <Label x:Name="lbadresa" Content="Adresa:&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="565,49,0,0" Height="43" Width="103" FontSize="20" RenderTransformOrigin="0.492,0.567"/>
+        <TextBox x:Name="tbadresa" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" Text="&#xA;" VerticalAlignment="Top" Width="180" Margin="505,102,0,0" FontSize="17"/>
+        <Button x:Name="btnadauga" x:FieldModifier="public"  Content="Adauga" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="457,318,0,0" FontSize="20" Click="btnadauga_Click"/>
+        <Button x:Name="btniesire" Content="Iesire" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="627,318,0,0" FontSize="20" Click="btniesire_Click"/>
+        <Button x:Name="btnstergecampuri" Content="Sterge campurile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="213" Margin="472,363,0,0" FontSize="20" Click="btnstergecampuri_Click"/>
+        <Button Content="Adauga note" HorizontalAlignment="Left" VerticalAlignment="Top" Width="137" FontSize="20" Height="32" Margin="111,379,0,0" Click="Button_Click"/>
+
+    </Grid>
+</Window>
